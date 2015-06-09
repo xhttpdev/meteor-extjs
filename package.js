@@ -11,14 +11,12 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-    api.addFolder('extjs-5.1.1/resources/images', 'client');
     api.addFiles('extjs-5.1.1/resources/ext-theme-crisp-all.css', 'client');
     api.addFiles('extjs-5.1.1/ext-all.js', 'client');
     api.addFiles('extjs-5.1.1/ext-theme-crisp.js', 'client');
 });
 
 Package.onTest(function(api) {
-    api.addFolder('extjs-5.1.1/resources/images', 'client');
     api.addFiles('extjs-5.1.1/resources/ext-theme-crisp-all-debug.css', 'client');
     api.addFiles('extjs-5.1.1/ext-all-debug.js', 'client');
     api.addFiles('extjs-5.1.1/ext-theme-crisp-debug.js', 'client');
