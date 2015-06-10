@@ -1,4 +1,3 @@
-invictus:extjs@0.0.2
-local-test:invictus:extjs@0.0.2
+invictus:extjs@0.0.3
 meteor@1.1.6
 underscore@1.0.3
