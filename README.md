@@ -22,17 +22,19 @@ Optimized for REST
             {name: 'age', type: 'int'}
         ]
     });
-    
-    Ext.create('RestStore', {
+
+    Ext.define('MyStore', {
+        extend: 'RestStore',
+        
         model: 'User',
-    
+
         restUrl: '/restful'
     });
 
 ### server ###
 
     Users = new Mongo.Collection("users");
-    
+
     RestRouter.route('/restful', {
         create: function (data) {
             Users.insert(data);
