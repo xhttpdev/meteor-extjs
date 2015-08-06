@@ -1,6 +1,6 @@
 Package.describe({
   name: 'invictus:extjs',
-  version: '0.3.0',
+  version: '0.4.0',
   // Brief, one-line summary of the package.
   summary: 'ExtJs 5 Crisp Theme with Meteor',
   // URL to the Git repository containing the source code for this package.
@@ -15,7 +15,7 @@ Package.onUse(function(api) {
     api.use('fortawesome:fontawesome@4.3.0', 'client');
     api.use('iron:router@1.0.0');
     // Used to inject content before anything else to head.
-    api.use('meteorhacks:inject-initial', 'server');
+    api.use('meteorhacks:inject-initial@1.0.2', 'server');
 
     api.addFiles([
         'extjs-5.1.1/resources/ext-theme-crisp-all_01.css',
