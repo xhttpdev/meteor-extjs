@@ -1,1 +1,7 @@
-// Write your package code here!
+Router.configure({
+    layoutTemplate: 'layout'
+});
+
+Router.route('/', function () {
+    this.render('extjs_body');
+});

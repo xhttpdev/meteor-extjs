@@ -2,21 +2,46 @@
 
 Optimized for REST
 
-## EXAMPLE ##
+## Quick Start ##
 
-### client ###
+    $ meteor add invictus:extjs
+    
+You will get a route for:
+
+    /
+
+Template `extjs_body` is automatically rendered
+
+Create your `app.js` in `client/app.js`
+
+### app.js ###
+
+    Ext.Loader.setConfig({
+        enabled: true,
+    });
+    
+    Ext.application({
+        name: 'MyApp',
+        autoCreateViewport: 'Viewport',
+    });
+    
+Put your app code in `public` directory so Ext.Loader can find your files:
+
+    /public
+        /app
+            /model
+            /store
+            /view
+
+## Usage ##
+
+### Client ###
 
     Ext.define('User', {
         extend: 'Ext.data.Model',
         idProperty: '_id',
         fields: [
-            {
-                name: '_id',
-                type: 'string',
-                convert: function (v) {
-                    return v._str;
-                }
-            },
+            {name: '_id', type: 'string'},
             {name: 'firstName', type: 'string'},
             {name: 'lastName', type: 'string'},
             {name: 'age', type: 'int'}
@@ -31,7 +56,7 @@ Optimized for REST
         restUrl: '/restful'
     });
 
-### server ###
+### Server ###
 
     Users = new Mongo.Collection("users");
 
