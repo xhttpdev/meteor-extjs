@@ -1,6 +1,6 @@
 Package.describe({
     name: 'invictus:extjs',
-    version: '0.5.0',
+    version: '0.6.0',
     // Brief, one-line summary of the package.
     summary: 'ExtJs 5 Crisp Theme with Meteor',
     // URL to the Git repository containing the source code for this package.
